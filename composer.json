@@ -1,0 +1,32 @@
+{
+  "name": "sol-parts/payum-upc",
+  "type": "library",
+  "description": "Payum gateway for UPC e-Commerce Connect: hosted checkout, signed notifications, payment status and full refunds",
+  "keywords": ["payum", "payment", "upc", "raiffeisen", "acquiring"],
+  "homepage": "https://sol.parts",
+  "license": "MIT",
+  "authors": [{"name": "Andrii Didenko", "email": "andrii@didenko.dev"}],
+  "require": {
+    "php": ">=8.2",
+    "ext-dom": "*",
+    "ext-json": "*",
+    "ext-mbstring": "*",
+    "ext-openssl": "*",
+    "payum/core": "^1.7",
+    "php-http/discovery": "^1.14",
+    "psr/http-factory": "^1.0",
+    "psr/http-message": "^1.1|^2.0"
+  },
+  "require-dev": {
+    "nyholm/psr7": "^1.8",
+    "php-http/httplug": "^2.0",
+    "phpunit/phpunit": "^11.5"
+  },
+  "autoload": {
+    "psr-4": {"SolParts\\PayumUpc\\": ""},
+    "exclude-from-classmap": ["/Tests/"]
+  },
+  "autoload-dev": {
+    "psr-4": {"SolParts\\PayumUpc\\Tests\\": "Tests/"}
+  }
+}
